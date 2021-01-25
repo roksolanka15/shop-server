@@ -1,0 +1,24 @@
+doctype
+html(lang="uk")
+  head
+    title=title
+    link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T", crossorigin="anonymous")
+  body
+    .container
+      h1=title
+      p(style="color:red")=error
+      form(action="sign_up" method="POST")
+        .form-group
+          label
+            |email
+          input.form-control( name="email" )
+
+        .form-group
+          label
+            |ім'я
+          input.form-control( name="name" )
+        .form-group
+          label
+            |пароль
+          input.form-control( type="password" name="password" )
+        button.btn.btn-success зберегти
